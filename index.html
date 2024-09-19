@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <style>
+                body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #3c55f6;
+            color: white;
+            padding: 1em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <br>
+    <section>
+        <p>
+            Para crear una ventana emergente (popup) en una aplicación de escritorio en Windows y Mac utilizando Python, puedes usar bibliotecas como Tkinter o PyQt. Aquí te muestro un ejemplo básico utilizando Tkinter, que es parte de la biblioteca estándar de Python y es bastante fácil de usar.
+            Ejemplo con Tkinter
+            Instala Tkinter (si no está instalado, en muchas distribuciones de Python ya viene incluido).
+            Código básico para una ventana emergente:
+        </p>
+        <br>
+        <br>
+        <pre><code>
+            import tkinter as tk
+            from tkinter import messagebox
+            
+            def mostrar_popup():
+                messagebox.showinfo("Título del Popup", "Este es un mensaje de popup.")
+            
+            # Crear la ventana principal
+            ventana = tk.Tk()
+            ventana.title("Aplicación Principal")
+            ventana.geometry("300x200")
+            
+            # Botón para mostrar el popup
+            boton_popup = tk.Button(ventana, text="Mostrar Popup", command=mostrar_popup)
+            boton_popup.pack(pady=20)
+            
+            # Ejecutar la aplicación
+            ventana.mainloop()
+            
+        </code></pre>
+    </section>
+</body>
+</html>
